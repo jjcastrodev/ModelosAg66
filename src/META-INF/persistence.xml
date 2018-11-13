@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ModelosAG66PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>gov.afip.dgi.agencia66.model.ControladorFiscal</class>
+    <class>gov.afip.dgi.agencia66.model.Agentes</class>
+    <class>gov.afip.dgi.agencia66.model.Padron</class>
+    <class>gov.afip.dgi.agencia66.model.ParCaracter</class>
+    <class>gov.afip.dgi.agencia66.model.ParfrasesAnio</class>
+    <class>gov.afip.dgi.agencia66.model.Tramites</class>
+    <class>gov.afip.dgi.agencia66.model.Incumplimientos</class>
+    <class>gov.afip.dgi.agencia66.model.ParLoader</class>
+    <class>gov.afip.dgi.agencia66.model.RetiroMemoria</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:\\10.157.41.124\sistemas\bd\sistemas.db"/>
+      <property name="javax.persistence.jdbc.user" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
