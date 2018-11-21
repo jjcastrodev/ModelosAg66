@@ -203,6 +203,14 @@ public class ControladorFiscalJpaController implements Serializable {
         } */
         return conMemoria;
     }
+    
+     public List findCFSinMemoria() {
+        
+        EntityManager em = getEntityManager();
+        TypedQuery<ControladorFiscal> consultaPorMemoria = em.createNamedQuery("ControladorFiscal.findByRetiroMemoria" ,ControladorFiscal.class);
+        List<ControladorFiscal> conMemoria = consultaPorMemoria.getResultList();
+        return conMemoria;
+    }
 
     private List obtenerCFDeObj(List resultList) {
         Object[] oCf;

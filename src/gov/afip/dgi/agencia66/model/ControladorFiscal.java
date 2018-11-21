@@ -81,7 +81,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "ControladorFiscal.findByUltimocingresado", query = "SELECT c FROM ControladorFiscal c WHERE c.ultimocingresado = :ultimocingresado"),
     @NamedQuery(name = "ControladorFiscal.findByUltimoaingresado", query = "SELECT c FROM ControladorFiscal c WHERE c.ultimoaingresado = :ultimoaingresado"),
     @NamedQuery(name = "ControladorFiscal.findByCuitYRetiroMemoria", query = "SELECT c FROM ControladorFiscal c WHERE c.cuit = :cuit and c.credencial is not null"),
-    /*and c.credencial is not null*/
+    @NamedQuery(name = "ControladorFiscal.findByRetiroMemoria", query = "SELECT c FROM ControladorFiscal c WHERE c.credencial is not null"),
     @NamedQuery(name = "ControladorFiscal.findByTieneultimoZ", query = "SELECT c FROM ControladorFiscal c WHERE c.tieneultimoZ = :tieneultimoZ")})
 public class ControladorFiscal implements Serializable {
 
